@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+:root{
+    --clr-1 : #052b2f;
+    --clr-2 : #073438;
+    --clr-3 : #0e4b50;
+    --clr-4 : #2d8f85;
+    --clr-5 : #637c54;
+}
+h1{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* text-fill-color: transparent; */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: flex;
+    font-size: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+.quiz-container{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);
+    width: 600px;
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 0 auto;
+}
+.quiz-header{
+    padding: 4rem;
+}
+h2{
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+ul li label{
+    cursor: pointer;
+}
+#Submit{
+    background-color: #073438;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+#Submit:focus{
+    outline: none;
+    background-color: #44b927;
+}
+.Reload{
+    background-color: #073438;
+    color: #fff;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+@media (max-width: 767px) {
+    h1{
+        text-align: center;
+        width: 100vh;
+    }
+    
+}
